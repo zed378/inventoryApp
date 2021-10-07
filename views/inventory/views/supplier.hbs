@@ -1,0 +1,81 @@
+{{>main/head}}
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+    {{>main/sidebar}}
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            {{>main/topbar}}
+
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
+
+                <div>
+                    <a href="/addsupplier"><button class="btn btn-outline-success"><i class="fas fa-folder-plus"></i>
+                            Add
+                            Supplier</button>
+                    </a>
+                    {{#if message}}
+                    <div class="alert alert-{{message.type}}" role="alert">
+                        {{message.message}}
+                    </div>
+                    {{/if}}
+                    <br>
+                </div>
+
+                <!-- Table Data -->
+                <div class="card-body">
+                    <div class="table-responsive table-hover">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                                <tr class="text-center">
+                                    <th>No</th>
+                                    <th>Supplier</th>
+                                    <th>Description</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">1</td>
+                                    <td>System Architect</td>
+                                    <td>
+                                        <table class="table-responsive table-borderless table-sm">
+                                            <tr>
+                                                <td>Created</td>
+                                                <td>:</td>
+                                                <td>Description</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Updated</td>
+                                                <td>:</td>
+                                                <td>Description</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="/editsupplier"><button class="btn btn-outline-warning"><i
+                                                    class="far fa-edit"></i>
+                                                Edit</button></a>
+                                        <a href=""><button class="btn btn-outline-danger"><i
+                                                    class="far fa-trash-alt"></i>
+                                                Delete</button></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+        {{>main/footer}}

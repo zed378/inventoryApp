@@ -1,0 +1,124 @@
+{{>main/head}}
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+    {{>main/sidebar}}
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            {{>main/topbar}}
+
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
+
+                <div>
+                    <a href="/addproducts"><button class="btn btn-outline-success"><i class="fas fa-cart-plus"></i> Add
+                            Product</button>
+                    </a>
+                    {{#if message}}
+                    <div class="alert alert-{{message.type}}" role="alert">
+                        {{message.message}}
+                    </div>
+                    {{/if}}
+                    <br>
+                </div>
+
+                <!-- Table Data -->
+                <div class="card-body">
+                    
+                    <div class="table-responsive table-hover">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                                <tr class="text-center">
+                                    <th>No</th>
+                                    <th>Image</th>
+                                    <th>Description</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">1</td>
+                                    <td class="text-center">
+                                        <img class="img-fluid" src="/static/img/couch.svg" alt=""
+                                            style="min-width: 100px; max-width: 200px;">
+                                    </td>
+                                    <td>
+                                        <table class="table-responsive table-borderless table-sm">
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>:</td>
+                                                <td>Description</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Part No</td>
+                                                <td>:</td>
+                                                <td>Description</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Label</td>
+                                                <td>:</td>
+                                                <td>Description</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Start Inv.</td>
+                                                <td>:</td>
+                                                <td>Description</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Received</td>
+                                                <td>:</td>
+                                                <td>Description</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Shipped</td>
+                                                <td>:</td>
+                                                <td>Description</td>
+                                            </tr>
+                                            <tr>
+                                                <td>On Hand</td>
+                                                <td>:</td>
+                                                <td>Description</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Min. Req.</td>
+                                                <td>:</td>
+                                                <td>Description</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Created</td>
+                                                <td>:</td>
+                                                <td>Description</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Updated</td>
+                                                <td>:</td>
+                                                <td>Description</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="/editproducts"><button class="btn btn-outline-warning"><i
+                                                    class="far fa-edit"></i>
+                                                Edit</button></a>
+                                        <a href=""><button class="btn btn-outline-danger"><i
+                                                    class="far fa-trash-alt"></i>
+                                                Delete</button></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+        {{>main/footer}}

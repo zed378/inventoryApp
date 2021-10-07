@@ -1,0 +1,104 @@
+{{>main/home}}
+
+<div class="container">
+
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
+
+        <div class="col-xl-10 col-lg-12 col-md-9">
+
+            <div class="card o-hidden border-0 shadow-lg my-5">
+                <div class="card-body p-0">
+                    <!-- Nested Row within Card Body -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="p-3">
+                                <div class="text-center">
+                                    <img src="/static/img/favicon.svg" alt="Logo"
+                                        style="max-width: 100px; margin: 0 0 20px 0">
+                                    <h3>Edit Purchase</h3>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="input-group input-group-sm mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text"
+                                                                id="inputGroup-sizing-sm">Product Name</span>
+                                                        </div>
+                                                        <input type="text" class="form-control" name="prodname"
+                                                            id="prodname" maxlength="255" placeholder="Input name"
+                                                            required aria-describedby="inputGroup-sizing-sm">
+                                                    </div>
+                                                    <div class="input-group input-group-sm mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text"
+                                                                id="inputGroup-sizing-sm">Purchase Date</span>
+                                                        </div>
+                                                        <input type="date" class="form-control" name="purdate"
+                                                            id="purdate" required
+                                                            aria-describedby="inputGroup-sizing-sm">
+                                                    </div>
+                                                    <div class="input-group input-group-sm mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text"
+                                                                id="inputGroup-sizing-sm">Number Received</span>
+                                                        </div>
+                                                        <input type="number" class="form-control" name="purnumb"
+                                                            id="purnumb" maxlength="255"
+                                                            placeholder="Input number received" required
+                                                            aria-describedby="inputGroup-sizing-sm">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="input-group input-group-sm mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text"
+                                                                id="inputGroup-sizing-sm">Created</span>
+                                                        </div>
+                                                        <input type="date" class="form-control" name="purdate"
+                                                            id="purdate" required
+                                                            aria-describedby="inputGroup-sizing-sm">
+                                                    </div>
+                                                    <div class="input-group input-group-sm mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text"
+                                                                id="inputGroup-sizing-sm">Updated</span>
+                                                        </div>
+                                                        <input type="date" class="form-control" name="purupdate"
+                                                            id="purupdate" required
+                                                            aria-describedby="inputGroup-sizing-sm">
+                                                    </div>
+                                                    <div class="input-group input-group-sm mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <label class="input-group-text"
+                                                                for="supplierOpt">Supplier</label>
+                                                        </div>
+                                                        <select class="custom-select" name="supplierOpt" id="supplierOpt">
+                                                            <option selected>Choose...</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pt-2 text-center">
+                                        <a href=""><button class="btn btn-outline-success" style="width: 30%;">Update</button></a>
+                                        <a href="/purchases"><button class="btn btn-outline-dark" style="width: 30%;">Cancel</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>

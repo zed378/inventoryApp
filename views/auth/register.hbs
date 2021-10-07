@@ -1,0 +1,47 @@
+{{>auth/reghead}}
+
+<div class="container">
+
+    <div class="card o-hidden border-0 shadow-lg my-5 col-lg-4 ml-auto">
+        <div class="card-body p-0">
+            <!-- Nested Row within Card Body -->
+            <div class="row">
+                <div class="col-lg">
+                    <div class="p-3">
+                        <div class="text-center">
+                            <i class="fas fa-cubes"
+                                style="font-size: 150px; margin: 0 0 30px 0; color:cornflowerblue;"></i>
+                        </div>
+
+                        {{#if message}}
+                        <div class="alert alert-{{message.type}}" role="alert">
+                            {{message.message}}
+                        </div>
+                        {{/if}}
+
+                        <form method="POST" action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Full Name"
+                                    required><br>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Email Address" required><br>
+                                <input type="password" class="form-control" id="password" name="password"
+                                    placeholder="Password" required><br>
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    Register Account
+                                </button>
+                            </div>
+                        </form>
+                        <hr>
+                        <div class="text-center">
+                            <a class="small" href="/login">Already have an account? Login!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{{>auth/footer}}
